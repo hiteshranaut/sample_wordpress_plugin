@@ -5,72 +5,80 @@
 
 
 .fluentu-sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-.fluentu-sticky-header.fluentu-sticky-header-active {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-.fluentu-sticky-header .fluentu-sticky-header-left {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right {
-    float: right;
-    width: 50%;
-    padding: 10px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a {
-    color: #000;
-    text-decoration: none;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a:hover {
-    color: #000;
-    text-decoration: none;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a img {
-    width: 20px;
-    height: 20px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a span {
-    padding: 0 5px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active {
-    color: #000;
-    text-decoration: none;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active:hover {
-    color: #000;
-    text-decoration: none;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active img {
-    width: 20px;
-    height: 20px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active span {
-    padding: 0 5px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active span {
-    padding: 0 5px;
-}
-.fluentu-sticky-header .fluentu-sticky-header-right ul li a.fluentu-sticky-header-active span {
-    padding: 0 5px;
+    max-width: 59em;
+    margin: 0 auto;
 }
 
+.main {
+    padding-top: 9.3333em !important;
+}
+
+
+.fluentu-sticky-header h1 {
+    font-size: 14px;
+    color: #070707;
+    margin: 11px 0px 5px;
+    width: 100%;
+}
+.fluentu-sticky-header.NEW {
+    max-width: 59em;
+    padding: 0em 7.69% 0.75em;
+    border-top: 1px solid #cbcbcb;
+    padding-bottom: 15px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    background: #fff;
+    z-index: 10000;
+}
+.fluentu-sticky-header-right .fluent_language a {
+    color: #050505;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100px;
+}
+.fluent_language img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.fluentu-sticky-header-right {
+    display: flex;
+    overflow-x: auto !important;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+.fluentu-sticky-header-right .fluent_language a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fluent_language {
+    border: 1px solid #cacbcb;
+    margin-right: 13px;
+    display: flex;
+    padding: 3px 4px;
+    justify-content: center;
+    align-items: center;
+}
+.fluent_language span {
+    font-size: 15px;
+}
+.fluentu-sticky-header-right::-webkit-scrollbar {
+    height:4px;
+    border-radius:5px;
+}
+.fluentu-sticky-header-right::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+}
+.fluentu-sticky-header-right::-webkit-scrollbar-thumb {
+  background: #bcbcbc; 
+}
+
+.fluentu-sticky-header-right::-webkit-scrollbar-thumb:hover {
+  background:#d2d5d6; 
+}

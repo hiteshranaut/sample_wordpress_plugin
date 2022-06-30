@@ -24,5 +24,10 @@
     add_action( 'wp_enqueue_scripts', 'fluentu_sticky_header_js' );
     
     function fluentu_sticky_header_js() {
-        wp_enqueue_script( 'fluentu_sticky_header_js', plugins_url( '/fluentu.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+        wp_enqueue_script( 'fluentu_sticky_header_js', plugins_url( '/fluentu.js', __FILE__ ), array( 'jquery'  ), '1.0', true );
+
+        // in JavaScript, object properties are accessed as ajax_object.ajax_url, ajax_object.we_value
+	wp_localize_script( 'fluentu_sticky_header_js', 'ajax_object',  array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'plugin_dir_url' => plugin_dir_url(__FILE__) ) );
+
+
     }
